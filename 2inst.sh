@@ -10,7 +10,7 @@ makepkg -si
 
 cd ~
 
-doas pacman -S xorg lightdm lightdm-slick-greeter polkit-gnome alacritty lxappearance rofi nitrogen xclip ttf-jetbrains-mono-nerd noto-fonts noto-fonts-extra neofetch lolcat exa fortune-mod dunst xcolor imagemagick gpick jq
+doas pacman -S xorg lightdm lightdm-slick-greeter polkit-gnome alacritty lxappearance rofi nitrogen xclip ttf-jetbrains-mono-nerd noto-fonts noto-fonts-extra neofetch lolcat exa fortune-mod dunst xcolor imagemagick gpick jq thunar ristretto firefox firefox-i18n-en-gb
 
 paru -S bibata-cursor-theme-bin picom-jonaburg-git sparklines-git lightdm-settings flat-remix flat-remix-gtk
 
