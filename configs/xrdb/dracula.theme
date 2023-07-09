@@ -1,0 +1,41 @@
+#define bg #1c1c1c
+#define fg #f8f8f2
+#define cc #ff92d0
+
+! black
+#define c00 #000000
+#define c08 #4d4d4d
+
+! red
+#define c01 #ff5555
+#define c09 #ff6e67
+
+! green
+#define c02 #50fa7b
+#define c10 #5af78e
+
+! yellow
+#define c03 #f1fa8c
+#define c11 #f4f99d
+
+! blue
+#define c04 #bd93f9
+#define c12 #caa9fa
+
+! magenta
+#define c05 #ff79c2
+#define c13 #ff92d9
+
+! cyan
+#define c06 #8be9fd
+#define c14 #9aedfe
+
+! white
+#define c07 #bfbfbf
+#define c15 #e6e6e6
+
+#define c_black  #000000
+#define c_accent #962ac3
+
+
+
