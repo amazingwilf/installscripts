@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-vim /etc/pacman.conf
-
 sed -i 's/^#Color/Color/' /etc/pacman.conf
 sed -i 's/^#VerbosePkgLists/VerbosePkgLists/' /etc/pacman.conf
 sed -i 's/^#ParallelDownloads = 5/ParallelDownloads = 10\nILoveCandy/' /etc/pacman.conf
