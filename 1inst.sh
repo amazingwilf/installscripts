@@ -14,7 +14,7 @@ echo "127.0.1.1 osiris.localdomain osiris" >> /etc/hosts
 echo root:S3raph1m | chpasswd
 
 pacman-key --init && pacman-key --populate && pacman -Sy archlinux-keyring && pacman -Syy
-pacman -S grub efibootmgr networkmanager dialog wpa_supplicant mtools dosfstools base-devel linux-headers avahi xdg-user-dirs xdg-utils bluez bluez-utils man doas tlp alsa-utils pipewire pipewire-alsa pipewire-pulse pipewire-jack bash-completion openssh rsync reflector acpi acpi_call acpid terminus-font xf86-video-amdgpu zsh zsh-completions unzip
+pacman -S grub efibootmgr networkmanager dialog wpa_supplicant mtools dosfstools base-devel linux-zen-headers avahi xdg-user-dirs xdg-utils bluez bluez-utils man doas tlp alsa-utils pipewire pipewire-alsa pipewire-pulse pipewire-jack bash-completion openssh rsync reflector acpi acpi_call acpid terminus-font xf86-video-amdgpu pacman-contrib expac exa fortune-mod neofetch lolcat unzip
 
 grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB 
 

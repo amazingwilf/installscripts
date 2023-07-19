@@ -2,6 +2,12 @@
 
 vim /etc/pacman.conf
 
+sed -i 's/^#Color/Color/' /etc/pacman.conf
+sed -i 's/^#VerbosePkgLists/VerbosePkgLists/' /etc/pacman.conf
+sed -i 's/^#ParallelDownloads = 5/ParallelDownloads = 10\nILoveCandy/' /etc/pacman.conf
+
+pacman -S --noconfirm --needed reflector rsync grub
+
 pacman-key --init && pacman-key --populate && pacman -Sy archlinux-keyring && pacman -Syy
 
 umount -R /mnt
@@ -40,3 +46,4 @@ reflector -c GB --latest 10 --sort rate --save /etc/pacman.d/mirrorlist
 pacstrap -K /mnt base linux-zen linux-firmware intel-ucode git wget neovim
 genfstab -U /mnt >> /mnt/etc/fstab
 cp /etc/pacman.conf /mnt/etc
+cp 1inst.sh /mnt/root/
