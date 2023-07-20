@@ -41,10 +41,6 @@ do
 done
 
 cd $BASE_DIR
-doas 00-keyboard.conf /etc/X11/xorg.conf.d/
+doas cp 00-keyboard.conf /etc/X11/xorg.conf.d/
+doas cp lightdm.conf /etc/lightdm/lightdm.conf
 
-
-doas sed -i 's/^#user-session=default/user-session=dwm/' /etc/lightdm/lightdm.conf
-doas sed -i 's/^#greeter-session=example-gtk-gnome/greeter-session=lightdm-slick-greeter/' /etc/lightdm/lightdm.conf
-doas sed -i 's/^#display-setup-script=/display-setup-script=xrandr --output=Virtual-1 --mode 1440x900/' /etc/lightdm/lightdm.conf
-doas sed -i 's/^#session-setup-script=/session-setup-script=xmodmap -e \"keycode 49 = grave asciitilde\"' /etc/lightdm/lightdm.conf
