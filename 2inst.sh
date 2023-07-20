@@ -36,7 +36,7 @@ cd ~/.local/src
 repos=( "dmenu" "dwm" )
 for repo in ${repos[@]}
 do
-    git clone git://github.com/amazingwilf/$repo
+    git clone http://github.com/amazingwilf/$repo
     cd $repo;make;doas make install;cd ..
 done
 
